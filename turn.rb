@@ -1,4 +1,4 @@
-
+require "./question"
 
 class Turn
   #creates a new turn every round
