@@ -2,22 +2,19 @@
 class Question
   #creates a random new question
   #no need to initialize with anything
-  NUM1 = rand(19) + 1
-  NUM2 = rand(19) + 1
+  attr_reader :num1, :num2
 
+  def initialize()
+    @num1 = rand(19) + 1
+    @num2 = rand(19) + 1
+  end
   def to_s
-    "What does #{NUM1} plus #{NUM2} equal?"
+    "What does #{num1} plus #{num2} equal?"
   end
 
   def ans
-    NUM1 + NUM2
+    num1 + num2
   end
 
 end
 
-
-
-# q1 = Question.new()
-
-# puts q1
-# puts q1.ans

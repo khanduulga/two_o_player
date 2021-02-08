@@ -5,25 +5,18 @@ class Turn
   #asks a question from current player
   #announces if answer is correct
   #initialize with player and question
-  attr_reader :player
-  QUESTION = Question.new()
-  ANSWER = QUESTION.ans
-
+  attr_reader :player_num
   def initialize(player)
-    @player = player
+    @player_num = player.num
   end
 
-  puts QUESTION
-  ans = gets.chomp
-  
-  if (ans == ANSWER)
-    puts "#{player}: YES! You are correct."
-  else
-    puts "#{player}: Seriously? No!"
-  end
-
-  def correct? 
-    ans == ANSWER
+  def correct?(bool) 
+    if bool
+      "Player #{player_num}: YES! You are correct."
+    else
+      "Player #{player_num}: Seriously! No!"
+    end
   end
   
 end
+

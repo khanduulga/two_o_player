@@ -1,14 +1,10 @@
 
 class Player
-  attr_accessor :lives, :id
+  attr_accessor :num, :lives
 
-  def  initialize(id)
-    @id = id
-    @lives = 3
-  end
-
-  def to_s
-    id
+  def  initialize(n, l)
+    @num = n
+    @lives = l
   end
 
 end
