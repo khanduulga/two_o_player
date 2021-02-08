@@ -50,7 +50,7 @@ while PLAYER_1.lives != 0 && PLAYER_2.lives != 0 do
     #GET ANSWER FROM PLAYER
     player_ans = gets.chomp
 
-    #CHECK ANSWER
+    #CHECK ANSWER AND UPDATE LIVES
     if new_question.ans != player_ans.to_i
       PLAYER_1.lives -= 1
     end
