@@ -1,5 +1,9 @@
 
 class Player
-  #stores how many lives player has
-  #initialize with lives
+  attr_accessor :lives
+  
+  def  initialize()
+    @lives = 3
+  end
+
 end
